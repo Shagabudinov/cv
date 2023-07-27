@@ -12,6 +12,8 @@ function App() {
   const headerRef = useRef(null);
   const [activeLink, setActiveLink] = useState("home");
 
+  // new code
+
   useEffect(() => {
     const handleScroll = () => {
       // Получаем текущую прокрутку страницы
