@@ -1,0 +1,55 @@
+@import "../../static/variables.sass"
+
+.footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    padding: 2rem 9%
+    background: $bg-color
+    &__text
+        & p 
+            font-size: 1.6rem
+    &__icon-top a
+        position: relative
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        padding: .8rem
+        background: $main-color
+        border: .2rem solid $main-color
+        border-radius: .6rem
+        z-index: 1
+        overflow: hidden
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 0%
+            height: 100%
+            background: $second-bg-color
+            z-index: -1
+            transition: .5s
+        &:hover::before 
+            width: 100%
+            
+        & i 
+            font-size: 2.4rem
+            color: $bg-color
+            transition: .5s
+        &:hover i 
+            color: $main-color
+
+@media ( max-width: 1000px )
+    .footer
+        padding: 2rem 4%
+
+@media ( max-width:  462px)
+    .footer
+        flex-direction: column-reverse
+
+        & p    
+            margin-top: 2rem    
+    
+            

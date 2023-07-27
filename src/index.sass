@@ -1,0 +1,59 @@
+@import './static/variables.sass'
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap')
+  
+body 
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  background-color: $bg-color
+  color: $text-color
+
+html  
+  font-size: 62.5%
+  overflow-x: hidden
+
+#root
+  scroll-snap-type: y mandatory
+
+code 
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+*
+  margin: 0px
+  padding: 0px
+  
+  box-sizing: border-box
+  text-decoration: none
+  outline: none
+  scroll-behavior: smooth
+  font-family: 'Tektur', cursive
+
+.heading
+  position: relative
+  font-size: 5rem
+  margin-bottom: 3rem
+  text-align: center
+  & span
+    color: $main-color
+
+@media ( max-width:  1300px)
+  html
+    font-size: 59%
+
+@media ( max-width:  1200px)
+  html
+    font-size: 55%
+
+@media ( max-width:  920px)
+  html
+    font-size: 52%  
+
+@media ( max-width:  520px)
+  html
+    font-size: 50%
+
+
+
+  

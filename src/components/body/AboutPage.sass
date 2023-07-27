@@ -1,0 +1,64 @@
+@import "../../static/variables.sass"
+
+    
+.about
+    @include flex-center()
+    flex-direction: column
+    gap: 2rem
+    background: $second-bg-color
+    padding-bottom: 6rem
+    &__img
+        @include flex-center()
+        position: relative
+        width: 25rem
+        height: 25rem
+        border-radius: 50%
+        & img
+            position: relative
+            width: 90%
+            border-radius: 50%
+            border: 0.2rem solid $main-color
+            overflow: hidden
+            
+        &__circle-span
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%) rotate(0)
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            border-top: 0.2rem solid $second-bg-color
+            border-bottom: 0.2rem solid $second-bg-color
+            border-left: 0.2rem solid $main-color
+            border-right: 0.2rem solid $main-color
+            animation: aboutSpinner 12s linear infinite
+
+    &__content
+        position: relative
+        text-align: center
+        & h3 
+            font-size: 2.6rem
+        & p 
+            font-size: 1.6rem
+            margin: 2rem 0 3rem
+            letter-spacing: .05rem
+            & span
+                color: $main-color
+                font-size: 1.8rem
+
+.element-animation 
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0
+  transform: translateY(100px)
+
+
+.element-animation.element-show 
+  opacity: 1
+  transition: all calc(.5s * var(--i))
+  transform: translateY(0%)
+
+@keyframes aboutSpinner  
+    100%
+        transform: translate(-50%, -50%) rotate(360deg)
+            

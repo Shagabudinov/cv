@@ -1,0 +1,52 @@
+@import '../static/variables.sass'
+    
+.btn-box
+    position: relative
+    display: flex
+    justify-content: space-between
+    width: 34.5rem
+    height: 5rem
+
+.btn
+    position: relative
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    width: 15rem
+    height: 100%
+    background: $main-color
+    border: 0.2rem solid $main-color
+    border-radius: 0.8rem
+    font-size: 1.8rem
+    font-weight: 600
+    letter-spacing: 0.1rem
+    color: $bg-color
+    z-index: 1
+    overflow: hidden
+    transition: 0.5s
+    &:hover
+        color: $main-color
+
+.btn-box .btn::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 0
+    height: 100%
+    background: $bg-color
+    z-index: -1
+    transition: 0.5s
+
+.btn-box .btn:nth-child(2)
+    background: transparent
+    color: $main-color
+    &:hover
+        color: $bg-color
+    &::before
+        background: $main-color
+
+.btn-box .btn:hover::before
+    width: 100%
+
+
