@@ -6,6 +6,8 @@ import App from './App.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// Типо код
+// Еще код
 root.render(
   <React.StrictMode>
     <App />
