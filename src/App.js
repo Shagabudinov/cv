@@ -13,6 +13,7 @@ function App() {
   const [activeLink, setActiveLink] = useState("home");
 
   // new code
+  
 
   useEffect(() => {
     const handleScroll = () => {
