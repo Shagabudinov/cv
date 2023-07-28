@@ -41,14 +41,9 @@ export const portfolioItems = [
       "Props",
     ],
     image: web4,
-    repositoryLink: "#",
+    repositoryLink: "https://github.com/Shagabudinov/cv",
     websiteLink: "#",
-    technologiesList: [
-      "HTML",
-      "Sass",
-      "JavaScript",
-      "React",
-    ],
+    technologiesList: ["HTML", "Sass", "JavaScript", "React"],
   },
   {
     id: 2,
