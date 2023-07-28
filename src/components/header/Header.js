@@ -1,24 +1,35 @@
-import React, { useEffect, useRef, useState, useCallback } from "react";
+import React, {
+  useEffect,
+  useRef,
+  useState,
+  useCallback,
+  useMemo,
+} from "react";
 import "./Header.sass";
 import { NAV_LINKS } from "../../scripts";
 
+const Header = ({ headerRef, activeLink }) => {
+  const [isMenuActive, setIsMenuActive] = useState(false);
 
-const Header = (props) => {
-  const headerRef = props.headerRef;
-  const activeLink = props.activeLink;
+  const MenuClickHandler = useCallback(() => {
+    setIsMenuActive((prevState) => !prevState);
+  }, []);
 
-
-  const [isMenuActive, setIsMenyActive] = useState(false);
-
-  const MenuClickHandler = () => {
-    setIsMenyActive(!isMenuActive);
-  };
+  const memoizedNavLinks = useMemo(() => {
+    return NAV_LINKS.map(({ id, text }) => (
+      <a
+        key={id}
+        href={`#${id}`}
+        className={activeLink === id ? "active" : ""}
+        onClick={MenuClickHandler}
+      >
+        {text}
+      </a>
+    ));
+  }, [activeLink, MenuClickHandler]);
 
   return (
-    <div
-      ref={headerRef}
-      className="header sticky"
-    >
+    <div ref={headerRef} className="header sticky">
       <a href="#home" className="header__logo">
         Vladislav.
         <span className="animate-span" style={{ "--i": 2 }} />
@@ -27,6 +38,7 @@ const Header = (props) => {
         onClick={MenuClickHandler}
         className={isMenuActive ? "bx bx-menu bx-x" : "bx bx-menu"}
         id="menu-icon"
+        aria-label={isMenuActive ? "Close menu" : "Open menu"}
       ></div>
 
       <nav
@@ -34,16 +46,7 @@ const Header = (props) => {
           isMenuActive ? "header__navbar active-navbar" : "header__navbar"
         }
       >
-        {NAV_LINKS.map(({ id, text }) => (
-          <a
-            onClick={MenuClickHandler}
-            key={id}
-            href={`#${id}`}
-            className={activeLink === id ? "active" : ""}
-          >
-            {text}
-          </a>
-        ))}
+        {memoizedNavLinks}
         <span className="animate-span" style={{ "--i": 3 }} />
       </nav>
     </div>

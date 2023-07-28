@@ -1,4 +1,3 @@
-// App.js
 import React, { useEffect, useRef, useState } from "react";
 import "./App.sass";
 import Header from "./components/header/Header";
@@ -11,12 +10,7 @@ import PortfolioPage from "./components/body/PortfolioPage";
 function App() {
   const headerRef = useRef(null);
   const [activeLink, setActiveLink] = useState("home");
-
-  // new code
-  //some new code
-  //4524
   
-
   useEffect(() => {
     const handleScroll = () => {
       // Получаем текущую прокрутку страницы
@@ -49,7 +43,6 @@ function App() {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Вызываем обработчик прокрутки для инициализации состояния
     handleScroll();
 
     return () => {
@@ -75,7 +68,7 @@ function App() {
     observer.observe(elm);
   }
 
-  // Остальной код остается без изменений
+
   return (
     <div>
       <Header headerRef={headerRef} activeLink={activeLink} />
