@@ -9,7 +9,7 @@ const Footer = () => {
       </div>
       <div className="footer__icon-top">
         <a href='#'>
-          <i class="bx bx-up-arrow-alt"></i>
+          <i className="bx bx-up-arrow-alt"></i>
         </a>
       </div>
     </footer>

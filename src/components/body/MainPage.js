@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./MainPage.sass";
 import { CVru } from "../../scripts";
 import { CVen } from "../../scripts";
@@ -41,13 +40,13 @@ const MainPage = (props) => {
         </div>
         <div className="home-content__media">
           <a href="https://vk.com/st3lfy">
-            <i class="bx bxl-vk"></i>
+            <i className="bx bxl-vk"></i>
           </a>
           <a href="https://t.me/St3lfy">
-            <i class="bx bxl-telegram"></i>
+            <i className="bx bxl-telegram"></i>
           </a>
           <a href="https://github.com/Shagabudinov">
-            <i class="bx bxl-github"></i>
+            <i className="bx bxl-github"></i>
           </a>
           <span className="animate-span" style={{ "--i": 6 }} />
         </div>
