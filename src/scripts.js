@@ -2,6 +2,7 @@ import web1 from "./img/website_1.jpg";
 import web2 from "./img/website_2.jpg";
 import web3 from "./img/website_3.jpg";
 import web4 from "./img/website_4.jpg";
+import web5 from "./img/website_5.jpg";
 
 export function debounce(func, delay) {
   let timer;
@@ -82,6 +83,15 @@ export const portfolioItems = [
   },
   {
     id: 4,
+    title: "Верстка главной страницы WELBEX",
+    technologies: ["Adaptive responsive", "BEM"],
+    image: web5,
+    repositoryLink: "https://github.com/Shagabudinov/welbex",
+    websiteLink: "https://ashente-welbex.netlify.app/",
+    technologiesList: ["HTML", "CSS"],
+  },
+  {
+    id: 5,
     title: "Главная страница веб-сайта пекарни",
     technologies: ["BEM"],
     image: web2,
