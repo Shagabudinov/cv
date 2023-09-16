@@ -14,22 +14,23 @@ const AboutPage = (props) => {
         Обо <span>Мне</span>
       </h2>
       <div className="about__img element-animation" style={{ "--i": 2 }}>
-        <img src={AboutImg} alt="" className="picture"/>
+        <img src={AboutImg} alt="" className="picture" />
         <span className="about__img__circle-span"></span>
       </div>
       <div className="about__content element-animation" style={{ "--i": 3 }}>
         <h3>Frontend Developer!</h3>
         <p>
-          Я — опытный веб-разработчик с уверенным владением современными
-          технологиями и инструментами для создания уникальных и качественных
-          веб-приложений. Мой стек технологий включает в себя{" "}
-          <span>
-            HTML5 , CSS3 (Sass/Scss), JavaScript, TypeScript, React и Redux.
-          </span>{" "}
-          Я применяю методологию <span>BEM</span> для эффективного и
-          структурированного создания масштабируемых проектов. Знаком с основами{" "}
-          <span>Git</span>, что позволяет мне участвовать в коллаборативной
-          разработке и эффективно управлять версиями проектов.
+          Я студент 4 курса технического вуза, начинающий frontend разработчик.
+          Имею опыт работы с <span>JavaScript, TypeScript, React, Redux, HTML,
+          CSS/Sass, Bootstrap, StyledComponents, BEM, Figma, Git</span>, а также
+          <span> node.js.</span> Знаком с принципом работы <span> Rest Api.</span> Каждый день развиваю свои
+          навыки в качестве frontend разработчика. Это выражается в решении
+          задач на алгоритмы и в создании учебных проектов, таких как
+          веб-приложения и веб-страницы. Осознанно и целенаправленно изучаю
+          frontend с марта 2023 года и за это время получил большой объем знаний
+          и опыта. Имею сильное желание развиваться и дальше, прежде всего,
+          потому что мне нравится эта профессия.
+          Вы можете ознакомиться с моими учебными проектами в разделе <a href="/#portfolio"><span>Портфолио</span></a>
         </p>
       </div>
     </section>
