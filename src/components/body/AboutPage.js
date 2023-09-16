@@ -20,15 +20,13 @@ const AboutPage = (props) => {
       <div className="about__content element-animation" style={{ "--i": 3 }}>
         <h3>Frontend Developer!</h3>
         <p>
-          Я студент 4 курса технического вуза, начинающий frontend разработчик.
+          Я студент 4 курса технического вуза, frontend разработчик.
           Имею опыт работы с <span>JavaScript, TypeScript, React, Redux, HTML,
-          CSS/Sass, Bootstrap, StyledComponents, BEM, Figma, Git</span>, а также
+          CSS/Sass/Scss, Bootstrap, StyledComponents, ant-design BEM, Figma, Git</span>, а также
           <span> node.js.</span> Знаком с принципом работы <span> Rest Api.</span> Каждый день развиваю свои
           навыки в качестве frontend разработчика. Это выражается в решении
           задач на алгоритмы и в создании учебных проектов, таких как
-          веб-приложения и веб-страницы. Осознанно и целенаправленно изучаю
-          frontend с марта 2023 года и за это время получил большой объем знаний
-          и опыта. Имею сильное желание развиваться и дальше, прежде всего,
+          веб-приложения и веб-страницы. Имею сильное желание развиваться и дальше, прежде всего,
           потому что мне нравится эта профессия.
           Вы можете ознакомиться с моими учебными проектами в разделе <a href="/#portfolio"><span>Портфолио</span></a>
         </p>

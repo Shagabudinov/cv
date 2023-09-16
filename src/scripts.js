@@ -21,10 +21,10 @@ export const NAV_LINKS = [
 ];
 
 export const CVru =
-    "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=182jeK80wjq2VcxbWaoW6EBiN3onEnR1d";
+    "https://drive.google.com/file/d/182jeK80wjq2VcxbWaoW6EBiN3onEnR1d/view?usp=sharing";
 
 export const CVen =
-    "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1vhgczdua4Gt-igq7durVkuVncku8Y5ln";
+    "https://drive.usercontent.google.com/download?id=182jeK80wjq2VcxbWaoW6EBiN3onEnR1d&export=download&authuser=0&confirm=t&uuid=eb13734b-e8ad-4fde-8d66-77106d150a9e&at=APZUnTXRDDp8ZQDBjo02ChCjsBzZ:1694850460274";
 
 export const portfolioItems = [
     {
@@ -39,9 +39,19 @@ export const portfolioItems = [
             "Hook useState",
         ],
         image: web6,
-        repositoryLink: "https://github.com/Shagabudinov/random-joke-app/tree/master",
+        repositoryLink:
+            "https://github.com/Shagabudinov/random-joke-app/tree/master",
         websiteLink: "https://shagabudinov.github.io/random-joke-app/",
-        technologiesList: ["HTML", "CSS", "API fetch", "JavaScript", "TypeScript", "React", "Redux", "ant-design"],
+        technologiesList: [
+            "HTML",
+            "CSS",
+            "API fetch",
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Redux",
+            "ant-design",
+        ],
     },
     {
         id: 2,

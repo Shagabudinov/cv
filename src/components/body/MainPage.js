@@ -31,10 +31,10 @@ const MainPage = (props) => {
         </p>
         <div className="btn-box">
           <a href={CVru} className="btn">
-            CV [ru]
+            CV [preview]
           </a>
           <a href={CVen} className="btn">
-            CV [en]
+            CV [download]
           </a>
           <span className="animate-span" style={{ "--i": 5 }} />
         </div>
