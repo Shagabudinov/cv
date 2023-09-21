@@ -4,6 +4,7 @@ import web3 from "./img/website_3.jpg";
 import web4 from "./img/website_4.jpg";
 import web5 from "./img/website_5.jpg";
 import web6 from "./img/website_6.jpg";
+import web7 from "./img/website_7.jpg";
 
 export function debounce(func, delay) {
     let timer;
@@ -29,6 +30,35 @@ export const CVen =
 export const portfolioItems = [
     {
         id: 1,
+        title: "Сайт с постами",
+        technologies: [
+            "Flex",
+            "BEM",
+            "JSX",
+            "Redux toolkit",
+            "Custom Hooks: useAppDispatch, useAppSelector",
+            "Hook useState",
+            "Custom components",
+            "Caching"
+        ],
+        image: web7,
+        repositoryLink:
+            "https://github.com/Shagabudinov/random-joke-app/tree/master",
+        websiteLink: "https://shagabudinov.github.io/random-joke-app/",
+        technologiesList: [
+            "HTML",
+            "CSS",
+            "API fetch",
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "React router v6",
+            "Redux",
+
+        ],
+    },
+    {
+        id: 2,
         title: "Генератор рандомных шуток",
         technologies: [
             "Flex",
@@ -54,7 +84,7 @@ export const portfolioItems = [
         ],
     },
     {
-        id: 2,
+        id: 3,
         title: "Портфолио Frontend разработчика",
         technologies: [
             "Adaptive responsive",
@@ -74,7 +104,7 @@ export const portfolioItems = [
         technologiesList: ["HTML", "Sass", "JavaScript", "React"],
     },
     {
-        id: 3,
+        id: 4,
         title: "Онлайн магазин Eco Shop",
         technologies: [
             "Flex",
@@ -99,7 +129,7 @@ export const portfolioItems = [
         ],
     },
     {
-        id: 4,
+        id: 5,
         title: "Веб-приложение для учета расходов",
         technologies: [
             "Flex",
@@ -115,7 +145,7 @@ export const portfolioItems = [
         technologiesList: ["HTML", "CSS", "JavaScript", "React"],
     },
     {
-        id: 5,
+        id: 6,
         title: "Верстка главной страницы WELBEX",
         technologies: ["Adaptive responsive", "BEM"],
         image: web5,
@@ -124,7 +154,7 @@ export const portfolioItems = [
         technologiesList: ["HTML", "CSS"],
     },
     {
-        id: 6,
+        id: 7,
         title: "Главная страница веб-сайта пекарни",
         technologies: ["BEM"],
         image: web2,
