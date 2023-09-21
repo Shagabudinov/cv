@@ -43,8 +43,8 @@ export const portfolioItems = [
         ],
         image: web7,
         repositoryLink:
-            "https://github.com/Shagabudinov/random-joke-app/tree/master",
-        websiteLink: "https://shagabudinov.github.io/random-joke-app/",
+            "https://github.com/Shagabudinov/posts-website",
+        websiteLink: "https://650ac64a60bc9138ea81faaf--friendly-piroshki-389ba1.netlify.app/",
         technologiesList: [
             "HTML",
             "CSS",
