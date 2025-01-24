@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://shagabudinov-cv.ru",
+      "permanent": true
+    }
+  ]
+}
