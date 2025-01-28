@@ -54,24 +54,39 @@
         padding: 4%
         
         & h2 
-            font-size: 2.8rem
+            font-size: 3.4rem
             color: $main-color
-        & p 
-            display: inline-flex
-            font-size: 1.6rem
-            margin-right: .6rem
-            &:last-child
-                margin-bottom: 1.2rem
         & span 
             margin: .8rem 0rem
             color: $main-color
-            font-size: 2.2rem
+            font-size: 2.4rem
+    &__title-description
+        @include flex-column-with-gap()
+        & p 
+            font-size: 2rem
     &__technologies
         display: flex
         justify-content: space-around
         align-items: center
         position: absolute
-        top: -12%
+        top: -8%
+        right: 2%
+        border: 0.3rem solid $main-color
+        border-radius: 2.8rem
+        background-color: $second-bg-color
+        padding: 1.2rem
+        z-index: 1005
+        & p    
+            font-size: 1.8rem
+            margin-right: 1.4rem
+            &:last-child
+                margin-right: 0rem
+    &__date
+        display: flex
+        justify-content: space-around
+        align-items: center
+        position: absolute
+        bottom: 10%
         right: 2%
         border: 0.3rem solid $main-color
         border-radius: 2.8rem
@@ -97,6 +112,11 @@
         & p    
             font-size: 1.6rem
             margin-right: 1.2rem
+    .portfolio-content__date
+        padding: 1.1rem
+        & p    
+            font-size: 1.6rem
+            margin-right: 1.2rem
 
 @media ( max-width: 1100px )
     .portfolio-content__main-information
@@ -107,6 +127,11 @@
         & span 
             font-size: 2rem
     .portfolio-content__technologies
+        padding: 1rem
+        & p    
+            font-size: 1.4rem
+            margin-right: 1rem
+    .portfolio-content__date
         padding: 1rem
         & p    
             font-size: 1.4rem
@@ -151,6 +176,8 @@
                 writing-mode: vertical-lr
                 &:last-child
                     margin-bottom: 0rem
+        &__date
+            visibility: hidden
 
 @media ( max-width: 830px )
     .portfolio .btn-box

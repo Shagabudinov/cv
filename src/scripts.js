@@ -5,6 +5,7 @@ import web4 from "./img/website_4.jpg";
 import web5 from "./img/website_5.jpg";
 import web6 from "./img/website_6.jpg";
 import web7 from "./img/website_7.jpg";
+import web8 from './img/website_8.jpg';
 
 export function debounce(func, delay) {
     let timer;
@@ -22,144 +23,134 @@ export const NAV_LINKS = [
 ];
 
 export const CVru =
-    "https://drive.google.com/file/d/182jeK80wjq2VcxbWaoW6EBiN3onEnR1d/view?usp=sharing";
+  'https://drive.google.com/file/d/1aDZT0b6-iRF_bjHgGtLUG_Y0SpCcufco/view?usp=sharing';
 
 export const CVen =
-    "https://drive.usercontent.google.com/download?id=182jeK80wjq2VcxbWaoW6EBiN3onEnR1d&export=download&authuser=0&confirm=t&uuid=eb13734b-e8ad-4fde-8d66-77106d150a9e&at=APZUnTXRDDp8ZQDBjo02ChCjsBzZ:1694850460274";
+  'https://drive.usercontent.google.com/download?id=1aDZT0b6-iRF_bjHgGtLUG_Y0SpCcufco&export=download&authuser=0&confirm=t&uuid=ad85f8b2-ffa4-42ce-ac69-f773e9a6a54b&at=AIrpjvOupEHpNQ4qxD6NHRgactSZ:1738100658043';
 
 export const portfolioItems = [
-    {
-        id: 1,
-        title: "Сайт с постами",
-        technologies: [
-            "Flex",
-            "BEM",
-            "JSX",
-            "Redux toolkit",
-            "Custom Hooks: useAppDispatch, useAppSelector",
-            "Hook useState",
-            "Custom components",
-            "Caching"
-        ],
-        image: web7,
-        repositoryLink:
-            "https://github.com/Shagabudinov/posts-website",
-        websiteLink: "https://650ac64a60bc9138ea81faaf--friendly-piroshki-389ba1.netlify.app/",
-        technologiesList: [
-            "HTML",
-            "CSS",
-            "API fetch",
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "React router v6",
-            "Redux",
-
-        ],
-    },
-    {
-        id: 2,
-        title: "Генератор рандомных шуток",
-        technologies: [
-            "Flex",
-            "BEM",
-            "JSX",
-            "Redux toolkit",
-            "Custom Hooks: useAppDispatch, useAppSelector",
-            "Hook useState",
-        ],
-        image: web6,
-        repositoryLink:
-            "https://github.com/Shagabudinov/random-joke-app/tree/master",
-        websiteLink: "https://shagabudinov.github.io/random-joke-app/",
-        technologiesList: [
-            "HTML",
-            "CSS",
-            "API fetch",
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Redux",
-            "ant-design",
-        ],
-    },
-    {
-        id: 3,
-        title: "Портфолио Frontend разработчика",
-        technologies: [
-            "Adaptive responsive",
-            "Css animations",
-            "Flex",
-            "Grid",
-            "BEM",
-            "JSX",
-            "Hook useState",
-            "Hook useEffect",
-            "Hook useRef",
-            "Props",
-        ],
-        image: web4,
-        repositoryLink: "https://github.com/Shagabudinov/cv",
-        websiteLink: "#",
-        technologiesList: ["HTML", "Sass", "JavaScript", "React"],
-    },
-    {
-        id: 4,
-        title: "Онлайн магазин Eco Shop",
-        technologies: [
-            "Flex",
-            "Grid",
-            "BEM",
-            "JSX",
-            "Hook useState",
-            "Hook useEffect",
-            "Hook useNavigate",
-            "Hook useLocate",
-        ],
-        image: web3,
-        repositoryLink: "https://github.com/Shagabudinov/eco-market",
-        websiteLink: "https://superb-sable-a0cae0.netlify.app",
-        technologiesList: [
-            "HTML",
-            "Sass",
-            "JavaScript",
-            "React",
-            "React-router-dom",
-            "Slick-slider",
-        ],
-    },
-    {
-        id: 5,
-        title: "Веб-приложение для учета расходов",
-        technologies: [
-            "Flex",
-            "BEM",
-            "Hook useState",
-            "Hook useEffect",
-            "Props",
-        ],
-        image: web1,
-        repositoryLink:
-            "https://github.com/Shagabudinov/App-for-keeping-track-of-purchases",
-        websiteLink: "https://ashente-keeping-purchases.netlify.app",
-        technologiesList: ["HTML", "CSS", "JavaScript", "React"],
-    },
-    {
-        id: 6,
-        title: "Верстка главной страницы WELBEX",
-        technologies: ["Adaptive responsive", "BEM"],
-        image: web5,
-        repositoryLink: "https://github.com/Shagabudinov/welbex",
-        websiteLink: "https://ashente-welbex.netlify.app/",
-        technologiesList: ["HTML", "CSS"],
-    },
-    {
-        id: 7,
-        title: "Главная страница веб-сайта пекарни",
-        technologies: ["BEM"],
-        image: web2,
-        repositoryLink: "https://github.com/Shagabudinov/Bakery-website",
-        websiteLink: "https://ashente-backery-website.netlify.app",
-        technologiesList: ["HTML", "CSS"],
-    },
+  {
+    id: 1,
+    title: 'Страница логина/регистрации',
+    description:
+      'В проекте реализованы: авторизация по jwt, выбор темы, обработка ошибок/валидация формы, анимации при смене режима, скелетон',
+    image: web8,
+    repositoryLink: 'https://github.com/Shagabudinov/crypton-frontend',
+    websiteLink: 'https://crypton-frontend.vercel.app/',
+    technologiesList: [
+      'React',
+      'Typescript',
+      'Vite',
+      'Tailwind',
+      'Axios',
+      'Shadcn/ui',
+      'Framer-motion',
+    ],
+    date: '20.01.2025',
+  },
+  {
+    id: 2,
+    title: 'Портфолио Frontend разработчика',
+    description:
+      'Решил, что пора создать свой сайт-портфолио, применил все ходовые по моему мнению технологии, а на момент 2025 года взгрустнул, потому что вместо tailwind, здесь использовал SASS) Теперь это будет мой личный legacy проект.',
+    image: web4,
+    repositoryLink: 'https://github.com/Shagabudinov/cv',
+    websiteLink: '#',
+    technologiesList: ['HTML', 'Sass', 'JavaScript', 'React'],
+    date: '21.09.2023',
+  },
+  {
+    id: 3,
+    title: 'Сайт с постами',
+    description:
+      'Сайт был создан с целью реализации тестового задания для вакансии (последний раз делаю тестовое задание). Просто работа с API (jsonplaceholder), вёрстка + рандомизация лайков и цветов. Только frontend',
+    image: web7,
+    repositoryLink: 'https://github.com/Shagabudinov/posts-website',
+    websiteLink:
+      'https://650ac64a60bc9138ea81faaf--friendly-piroshki-389ba1.netlify.app/',
+    technologiesList: [
+      'HTML',
+      'CSS',
+      'API fetch',
+      'JavaScript',
+      'TypeScript',
+      'React',
+      'React router v6',
+      'Redux',
+    ],
+    date: '20.09.2023',
+  },
+  {
+    id: 4,
+    title: 'Генератор рандомных шуток',
+    description:
+      'Проект создан с целью практики над redux toolkit и кастомизации в ant-design. По апи получаю случайные шутки, добавляю в store и отображаю историю шуток в таблице ant-design',
+    image: web6,
+    repositoryLink:
+      'https://github.com/Shagabudinov/random-joke-app/tree/master',
+    websiteLink: 'https://shagabudinov.github.io/random-joke-app/',
+    technologiesList: [
+      'HTML',
+      'CSS',
+      'API fetch',
+      'JavaScript',
+      'TypeScript',
+      'React',
+      'Redux',
+      'ant-design',
+    ],
+    date: '15.09.2023',
+  },
+  {
+    id: 5,
+    title: 'Онлайн магазин Eco Shop',
+    description:
+      'Создал будучи в вузе с целью прохождения летней практики. В проекте практиковался в уже изученных технологиях. В проекте только frontend',
+    image: web3,
+    repositoryLink: 'https://github.com/Shagabudinov/eco-market',
+    websiteLink: 'https://superb-sable-a0cae0.netlify.app',
+    technologiesList: [
+      'HTML',
+      'Sass',
+      'JavaScript',
+      'React',
+      'React-router-dom',
+      'Slick-slider',
+    ],
+    date: '21.07.2023',
+  },
+  {
+    id: 6,
+    title: 'Веб-приложение для учета расходов',
+    description:
+      'Результат прохождения видеокурса по React. Идея не моя, реализация под копирку из видеокурса для освоения React',
+    image: web1,
+    repositoryLink:
+      'https://github.com/Shagabudinov/App-for-keeping-track-of-purchases',
+    websiteLink: 'https://ashente-keeping-purchases.netlify.app',
+    technologiesList: ['HTML', 'CSS', 'JavaScript', 'React'],
+    date: '11.07.2023',
+  },
+  {
+    id: 7,
+    title: 'Главная страница веб-сайта пекарни',
+    description:
+      'Начал изучать вёрстку, в результате чего, благодаря видеокурсу, повторил 1 в 1 дизайн, идея не моя, шаблон не мой',
+    image: web2,
+    repositoryLink: 'https://github.com/Shagabudinov/Bakery-website',
+    websiteLink: 'https://ashente-backery-website.netlify.app',
+    technologiesList: ['HTML', 'CSS'],
+    date: '26.01.2023',
+  },
+  {
+    id: 8,
+    title: 'Верстка главной страницы WELBEX',
+    description:
+      'Изучал HTML, CSS, pixel perfect вёрстку, в результате чего взял тестовое задания из какой-то вакансии и реализовал для себя',
+    image: web5,
+    repositoryLink: 'https://github.com/Shagabudinov/welbex',
+    websiteLink: 'https://ashente-welbex.netlify.app/',
+    technologiesList: ['HTML', 'CSS'],
+    date: '22.01.2023',
+  },
 ];
