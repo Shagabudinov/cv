@@ -56,14 +56,14 @@ export const portfolioItems = [
     image: web4,
     repositoryLink: 'https://github.com/Shagabudinov/cv',
     websiteLink: '#',
-    technologiesList: ['HTML', 'Sass', 'JavaScript', 'React'],
+    technologiesList: ['HTML', 'Sass', 'БЭМ', 'JavaScript', 'React'],
     date: '21.09.2023',
   },
   {
     id: 3,
     title: 'Сайт с постами',
     description:
-      'Сайт был создан с целью реализации тестового задания для вакансии (последний раз делаю тестовое задание). Просто работа с API (jsonplaceholder), вёрстка + рандомизация лайков и цветов. Только frontend',
+      'Просто работа с API (jsonplaceholder), вёрстка + рандомизация лайков и цветов, AsyncThunk для получения и хранения постов. Только frontend',
     image: web7,
     repositoryLink: 'https://github.com/Shagabudinov/posts-website',
     websiteLink:
