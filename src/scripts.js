@@ -6,6 +6,7 @@ import web5 from "./img/website_5.jpg";
 import web6 from "./img/website_6.jpg";
 import web7 from "./img/website_7.jpg";
 import web8 from './img/website_8.jpg';
+import web9 from './img/website_9.jpg';
 
 export function debounce(func, delay) {
     let timer;
@@ -31,6 +32,19 @@ export const CVen =
 export const portfolioItems = [
   {
     id: 1,
+    title: 'Сервис Password Check',
+    description:
+      'Сервис для проверки устойчивости пароля к взлому, а также для проверки, был ли замечен пароль в открытых слитых базах. Резко стала интересна тема паролей и их безопасности, решил в этом более тщательно разобраться и заодно реализовать пет-проект с анимациями в неоновых тонах',
+    image: web9,
+    repositoryLink: 'https://github.com/Shagabudinov/Password-check',
+    websiteLink: 'https://password-check-tau.vercel.app/',
+    technologiesList: [
+      'Vanila JavaScript', 'CSS-animations', 'REST API'
+    ],
+    date: '01.02.2025',
+  },
+  {
+    id: 2,
     title: 'Страница логина/регистрации',
     description:
       'В проекте реализованы: авторизация по jwt, выбор темы, обработка ошибок/валидация формы, анимации при смене режима, скелетон',
@@ -49,7 +63,7 @@ export const portfolioItems = [
     date: '20.01.2025',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Портфолио Frontend разработчика',
     description:
       'Решил, что пора создать свой сайт-портфолио, применил все ходовые по моему мнению технологии, а на момент 2025 года взгрустнул, потому что вместо tailwind, здесь использовал SASS) Теперь это будет мой личный legacy проект.',
@@ -60,7 +74,7 @@ export const portfolioItems = [
     date: '21.09.2023',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Сайт с постами',
     description:
       'Просто работа с API (jsonplaceholder), вёрстка + рандомизация лайков и цветов, AsyncThunk для получения и хранения постов. Только frontend',
@@ -81,7 +95,7 @@ export const portfolioItems = [
     date: '20.09.2023',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Генератор рандомных шуток',
     description:
       'Проект создан с целью практики над redux toolkit и кастомизации в ant-design. По апи получаю случайные шутки, добавляю в store и отображаю историю шуток в таблице ant-design',
@@ -102,7 +116,7 @@ export const portfolioItems = [
     date: '15.09.2023',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Онлайн магазин Eco Shop',
     description:
       'Создал будучи в вузе с целью прохождения летней практики. В проекте практиковался в уже изученных технологиях. В проекте только frontend',
@@ -120,7 +134,7 @@ export const portfolioItems = [
     date: '21.07.2023',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Веб-приложение для учета расходов',
     description:
       'Результат прохождения видеокурса по React. Идея не моя, реализация под копирку из видеокурса для освоения React',
@@ -132,7 +146,7 @@ export const portfolioItems = [
     date: '11.07.2023',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Главная страница веб-сайта пекарни',
     description:
       'Начал изучать вёрстку, в результате чего, благодаря видеокурсу, повторил 1 в 1 дизайн, идея не моя, шаблон не мой',
@@ -143,7 +157,7 @@ export const portfolioItems = [
     date: '26.01.2023',
   },
   {
-    id: 8,
+    id: 9,
     title: 'Верстка главной страницы WELBEX',
     description:
       'Изучал HTML, CSS, pixel perfect вёрстку, в результате чего взял тестовое задания из какой-то вакансии и реализовал для себя',
