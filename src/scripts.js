@@ -24,10 +24,10 @@ export const NAV_LINKS = [
 ];
 
 export const CVru =
-  'https://drive.google.com/file/d/18OmxpVP4f1k_3fy8Fhl4n2I2TVp_1us1/view?usp=sharing';
+  'https://drive.google.com/file/d/15m-SrBCIYoiiQ08KZdru9ZRLHWDXKlZZ/view?usp=sharing';
 
 export const CVen =
-  'https://drive.usercontent.google.com/download?id=18OmxpVP4f1k_3fy8Fhl4n2I2TVp_1us1&export=download&authuser=0';
+  'https://drive.usercontent.google.com/download?id=15m-SrBCIYoiiQ08KZdru9ZRLHWDXKlZZ&export=download&authuser=0&confirm=t&uuid=b0e5a9c9-649c-47e9-8b6e-7aadeb09c2ca&at=APcmpowsdlvpipv-kdlwSfCPkRfP:1745942071860';
 
 export const portfolioItems = [
   {
